@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-	
-        <html lang="en">
-            <head>
-        
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Søkemotoroptimalisering (SEO) – Grunnleggende teknikker og artikler</title>
+		
 		<link href="font/css/all.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>Søkemotoroptimalisering</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<script>
@@ -26,105 +24,120 @@
 		}
 		</script>
 	<div id="grid-container">
-		<header id="page-header">
-		<a href="#" id="mainLogo">LOGO</a>
+		<header id="page-header" class="site header">
+			<h1>Søkemotoroptimalisering</h1>
+			<a href="index.html" class="logo">Logo</a>
+			<p>Tips, artikler og ressurser for bedre synlighet i søkemotorer</p>
 		</header>
-      
-		<nav>
+		<nav aria-label="Hovedmeny">
+			<button class="menu-toggle" arial-label="Åpne eller lukke hovedmeny"
+			aria-controls="main-menu" aria-expanded="false" onclick="mobilMenu()">
 			
-			<button id="menuBtn" ><i class="fas fa-hamburger"></i></button>
-			<ul id="ham" class="top-menu">
-				<li><a href="/tjenester">Tjenester</a></li>
-				<li><a href="/case">Kundecase</a></li>
-				<li><a href="/blogg">Blogg</a></li>
-            </ul>
+			<i class="fas fa-hamburger" aria-hidden="true"></i>
+			</button>
+			<ul id="main-menu" class="top-menu">
+				<li><a href="index.html">Forside - SEO artikler</a></li>
+				<li><a href="index.html">SEO teknikker</a></li>
+				<li><a href="index.html">Teknisk SEO sjekkliste</a></li>
 				<!-- Her starter dropdown -->
 				<li class="dropdown-point"> 
-					<button>Oblig 1</button>
+					<span class="dropdown-label">Oblig 1</span>
 					<ul class="dropdown-main">
-						<li><a href="html-skjema">HTML-skjema</a></li>
-						<li><a href="media-typer">Media typer</a></li>
-						<li><a href="css-layout">CSS Layout</a></li>
-					</li>
-					
+						<li><a href="skjema.html"> hva er HTML-skjemaer</a></li>
+						<li><a href="media-typer.html">Forskjellige medietyper på nett</a></li>
+						<li><a href="css-layout.html">CSS layout og responsivt design</a></li>
 					</ul>
-				
+				</li>
 				<!-- Her slutter dropdown -->
 	
 			</ul>
 		</nav>
-		
-		<main id="main">
-            <h1>Søkemotoroptimalisering</h1>
-            <section>
-			<article class="item-1">
+		<div id="main content">
+			<section aria-labelledby="artikler-tittel">
+				<h2>Utvalgte artikler om SEO</h2>
+			<article id="item-1">
+				<h3>Hva er søkemotoroptimalisering?</h3>
 				
-					<h2>Nyheter</h2>
-			
-				<img src="https://picsum.photos/400/400" alt="">
+				<img src="https://picsum.photos/400/400" alt="Illustrasjon av en nettside som klatrer i søkeresultater">
 				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.</p>
-				<a class="tiny-link" href="#">Les mer</a>
-			</article> 
-            
-
-			<article class="item-2">
-				
-					<h2>Slik skriver du gode metabeskrivelser</h2>
-				
-				<img src="https://picsum.photos/400/400" alt="">
-				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.</p>
-				<a class="tiny-link" href="#">Les mer</a>
+					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw.
+                    Oh, wow. That's an intense line of questioning, Snuffles. I'll tell you how I feel
+                    about school, Jerry. It's a waste of time. Her bruker vi teksten som eksempelinnhold
+                    mens vi fokuserer på SEO-struktur og gode lenker.
+				</p>
+				<a href="artikkel-intro-seo.html">Les introduksjon til søkemotoroptimalisering</a>
 			</article>
-			<article class="item-3">
+			<article id="item-2">
 				
-					<h2>>Utvalgte artikler</h2>
+					<h3>Teknisk SEO og ytelse</h3>
 				
-				<img src="https://picsum.photos/400/400" alt="">
+				<img src="https://picsum.photos/400/400" alt="Illustrasjon av tannhjul som symboliserer teknisk SEO">
 				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.</p>
-				<a class="tiny-link" href="#">Les mer</a>
+					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw.
+                    Oh, wow. That's an intense line of questioning, Snuffles. Her kunne det stått om
+                    lastetid, mobilvennlighet og strukturert data som viktige deler av teknisk SEO.
+				</p>
+				<a href="artikkel-teknisk-seo.html">Les om teknisk SEO og hastighetsoptimalisering</a>
 			</article>
-			<article class="item-4">
+			<article id="item-3">
 				
-					<h2>Hvordan bygge god informasjonsarkitektur</h2>
-			
-				<img src="https://picsum.photos/400/400" alt="">
-				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.</p>
-				<a class="tiny-link" href="#">Les mer</a>
-			</article>
-			<article class="item-5">
+					<h3>Innholdsstrategi for bedre rangering</h3>
 				
-					<h2>Teknisk SEO‑sjekkliste for 2025</h2>
-			
-				<img src="https://picsum.photos/400/400" alt="">
+				<img src="https://picsum.photos/400/400" alt="Person som skriver innhold til en blogg om SEO">
 				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.</p>
-				<a class="tiny-link" href="#">Les mer</a>
+					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw.
+                    Oh, wow. That's an intense line of questioning, Snuffles. Her kan du se for deg at
+                    innholdet handler om nøkkelord, struktur og lesbarhet for brukeren.
+				</p>
+				<a href="artikkel-innhold.html">Les om hvordan du skriver SEO-vennlig innhold</a>
 			</article>
-            </section>
-		</main>
-		<aside id="aside">
-			<h2>Side innhold</h2>
-			
+			<article>
+				
+					<h3>Lenkebygging og autoritet</h3>
+				
+				<img src="https://picsum.photos/400/400" alt="Kjede av lenker som symboliserer lenkebygging på nett">
+				<p>
+					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
+				</p>
+				<a href="artikkel-lenkebygging.html">Les mer om lenkebygging og autoritet</a>
+			</article>
+			<article>
+				
+					<h3>SEO-verktøy du bør kjenne til</h3>
+				
+				<img src="https://picsum.photos/400/400"  alt="Skjermbilde med ulike analyseverktøy for SEO">
+				<p>
+					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw.
+                    Oh, wow. That's an intense line of questioning, Snuffles. Her kunne vi listet verktøy
+                    som Lighthouse, Search Console og ulike nøkkelordverktøy.
+				</p>
+				<a href="artikkel-seo-verktøy.html">Se anbefalte verktøy for SEO-analyse</a>
+			</article>
+		   </section>
+	    </main>
+		<aside id="aside" aria-label="Relatert innhold og ressurser">
+			<h3>Relatert innhold</h3>
+			<section id="video" aria-label="Video om SEO">
+				<!-- Her kan du evt. legge inn en video-embed senere -->
+			</section>
 			<section id="rel-article">
 				<ul>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
+					<li><a href="guide-metatagger.html">Guide til bedre metatagger</a></li>
+					<li><a href="sjekkliste-seo-innhold.html">Sjekkliste for SEO-innhold</a></li>
+					<li><a href="strukturert-data.html">Introduksjon til strukturert data</a></li>
+					<li><a href="mobilvennlig-nettside.html">Slik gjør du siden mobilvennlig</a></li>
+					<li><a href="seo-vanlige-feil.html"></a>Vanlige SEO-feil og hvordan unngå dem</li>
 				</ul>
 			</section>			
 			<section id="google-btn">
-				<a href="#" class="btn">Google</a>
+				<a class="btn"  href="https://www.google.no" target="_blank" rel="noopener">
+                       Søk i Google etter mer om SEO
+				</a>
 			</section>
 		</aside>
 		<footer>
-			Webutvikling 2024
+			<p>Webutvikling 2024 – Øving i søkemotoroptimalisering (SEO)</p>
 		</footer>
-
+	</div>
 	</body>
 </html>
