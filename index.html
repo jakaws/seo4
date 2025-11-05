@@ -7,10 +7,22 @@
 		
 		<link href="font/css/all.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css"  href="style.css">
 	</head>
 	<body>
-		
+		<script>
+		function mobilMenu(){
+			var x = document.getElementById("ham");
+
+			if(x.style.display === "block"){
+				x.style.display = "none";
+			}
+			
+			else {
+				x.style.display= "block";
+			}
+		}
+		</script>
 	<div id="grid-container">
 		<header id="page-header" class="site header">
 			<h1>Søkemotoroptimalisering</h1>
@@ -40,7 +52,7 @@
 	
 			</ul>
 		</nav>
-		<div id="main content">
+		<main id="main">
 			<section aria-labelledby="artikler-tittel">
 				<h2>Utvalgte artikler om SEO</h2>
 			<article id="item-1">
